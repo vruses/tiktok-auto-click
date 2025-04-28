@@ -130,11 +130,11 @@ const createPanel = function () {
     <div class="menu-panel">
       <div class="menu-item">
         <span>点赞</span>
-        <div class="switch .like-switch"></div>
+        <div class="switch like-switch"></div>
       </div>
-      <div class="menu-item .collect-switch">
+      <div class="menu-item">
         <span>收藏</span>
-        <div class="switch"></div>
+        <div class="switch collect-switch"></div>
       </div>
       <input type="text" class="input-field" placeholder="粘贴接口地址" />
     </div>
@@ -142,8 +142,8 @@ const createPanel = function () {
 `;
 
   // 获取切换按钮（switch）
-  const likeSwitch = document.querySelector(".like-switch");
-  const collectSwitch = document.querySelector(".collect-switch");
+  const likeSwitch = shadowRoot.querySelector(".like-switch");
+  const collectSwitch = shadowRoot.querySelector(".collect-switch");
 
   // 初始化按钮状态（status）
   function initializeSwitches() {
@@ -186,19 +186,19 @@ const createPanel = function () {
   initializeSwitches();
 
   // 打开或关闭菜单（menu）
-  floatBall.addEventListener("click", function (event) {
-    this.classList.toggle("active");
-  });
-
-  // 为悬浮球和开关添加事件
   const floatBall = shadowRoot.querySelector(".float-ball");
   // 点击页面其他地方时关闭菜单
   document.addEventListener("click", function () {
     floatBall.classList.remove("active");
   });
+  // 点击浮窗显示或隐藏面板
+  floatBall.addEventListener("click", function (event) {
+    event.stopPropagation(); // 阻止冒泡
+    floatBall.classList.toggle("active");
+  });
 
   // 获取 input 元素
-  const inputField = document.querySelector(".input-field");
+  const inputField = shadowRoot.querySelector(".input-field");
   // 设置 URL 默认值（可以从 GM_getValue 获取已存储的 URL）
   const defaultURL = GM_getValue("storedURL", "");
   // 初始化 input 的值
