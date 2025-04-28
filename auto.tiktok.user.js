@@ -6,10 +6,20 @@
 // @version     1.0.0
 // @author      layenh
 // @grant       none
+// @grant        GM_setValue
+// @grant        GM_getValue
 // @version     1.0
 // @description 2025/4/27 16:26:24
 // ==/UserScript==
 
+// if (initpage) {
+//   fetch & location.href;
+// } else {
+//   fetch;
+// }
+// fetch('xxx',{
+//   mode: 'no-cors'
+// }).then(res=>{console.log(res.json())})
 const Time = 3000;
 
 // 创建一个键盘按下事件
@@ -110,14 +120,21 @@ pageLoadPromise.then(() => {
     await loopLoad(document, "video", (el) => {
       //视频播放页
     });
-    $queryPlayerEl("digg").forEach((ele) => {
-      // 是否点赞？
-      if (ele.dataset.e2eState.includes("-no-")) ele.click();
-    });
-    $queryPlayerEl("collect").forEach((ele) => {
-      // 是否收藏？
-      if (ele.dataset.e2eState.includes("-no-")) ele.click();
-    });
+    if (GM_getValue("likeStatus"))
+      $queryPlayerEl("digg").forEach((ele) => {
+        // 是否点赞？
+        if (ele.dataset.e2eState.includes("-no-")) ele.click();
+      });
+    if (GM_getValue("collectStatus"))
+      $queryPlayerEl("collect").forEach((ele) => {
+        // 是否收藏？
+        if (ele.dataset.e2eState.includes("-no-")) ele.click();
+      });
+    document
+      .querySelectorAll("[data-e2e=feed-video-nickname]")
+      .forEach((ele) => {
+        // if (ele.textContent === "name") location.href("www.baidu.com");
+      });
     return Promise.resolve();
   }
   // 视频页调用顺序
@@ -125,14 +142,21 @@ pageLoadPromise.then(() => {
     // 派发事件切换视频
     document.dispatchEvent(keyboardEvent);
     await loopLoad(document, "video", (el) => {});
-    $queryPlayerEl("digg").forEach((ele) => {
-      // 是否点赞？
-      if (ele.dataset.e2eState.includes("-no-")) ele.click();
-    });
-    $queryPlayerEl("collect").forEach((ele) => {
-      // 是否收藏？
-      if (ele.dataset.e2eState.includes("-no-")) ele.click();
-    });
+    if (GM_getValue("likeStatus"))
+      $queryPlayerEl("digg").forEach((ele) => {
+        // 是否点赞？
+        if (ele.dataset.e2eState.includes("-no-")) ele.click();
+      });
+    if (GM_getValue("collectStatus"))
+      $queryPlayerEl("collect").forEach((ele) => {
+        // 是否收藏？
+        if (ele.dataset.e2eState.includes("-no-")) ele.click();
+      });
+    document
+      .querySelectorAll("[data-e2e=feed-video-nickname]")
+      .forEach((ele) => {
+        // if (ele.textContent === "name") location.href("www.baidu.com");
+      });
   }
 
   // 后台定时器管理者实例
@@ -154,7 +178,9 @@ pageLoadPromise.then(() => {
   runSteps();
 });
 
-// webworker定时器
-// 自定义视频是否点赞收藏
-// 自定义接口地址
-//
+// 创建 点赞收藏接口 面板
+// 自定义视频是否点赞收藏等；默认不点赞收藏；
+// 当前页是否初始页面？获取接口数据并跳转：获取接口数据并等待脚本执行；
+// 获取当前主页用户名，判断document.querySelectorAll('[data-e2e=feed-video-nickname]').textContent
+// 是否等于用户主页的用户名
+// 包含了一个不同的用户名，则跳转已经加载好的链接
