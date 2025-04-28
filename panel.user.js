@@ -211,14 +211,15 @@ const createPanel = function () {
       .readText()
       .then((text) => {
         inputField.value = text; // 将剪贴板中的 URL 填充到 input 中
+        inputField.dispatchEvent(new Event("input", { bubbles: true }));
       })
       .catch((err) => {
         console.error("无法读取剪贴板内容:", err);
       });
   });
-  inputField.addEventListener("change", function () {
+  inputField.addEventListener("input", function () {
     GM_setValue("storedURL", inputField.value); // 存储该 URL
-  })
+  });
 
   return container;
 };
