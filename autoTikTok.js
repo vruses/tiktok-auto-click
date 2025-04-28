@@ -10,7 +10,7 @@
 // @description 2025/4/27 16:26:24
 // ==/UserScript==
 
-const Time = 5000;
+const Time = 3000;
 
 // 创建一个键盘按下事件
 const keyboardEvent = new KeyboardEvent("keydown", {
@@ -21,6 +21,41 @@ const keyboardEvent = new KeyboardEvent("keydown", {
   bubbles: true, // 是否冒泡
   cancelable: true, // 是否可以取消
 });
+
+// webWork后台定时器管理视频切换频率
+const workerJs = function () {
+  class TimerManager {
+    constructor() {
+      this.timers = new Map();
+    }
+    set(key, callback, delay) {
+      this.clean(key);
+      const id = setTimeout(() => {
+        callback();
+      }, delay);
+      this.timers.set(key, id);
+    }
+    clean(key) {
+      if (this.timers.has(key)) {
+        clearTimeout(this.timers.get(key));
+        this.timers.delete(key);
+      }
+    }
+    cleanAll() {
+      for (let id of this.timers.values()) {
+        clearTimeout(id);
+      }
+      this.timers.clear();
+    }
+    has(key) {
+      return this.timers.has(key);
+    }
+  }
+  const manager = new TimerManager();
+  self.addEventListener("message", function (e) {
+    manager.set("switchClip", () => self.postMessage("switchClip"), e.data);
+  });
+};
 
 /**
  * @param {string} selectorKey
@@ -99,11 +134,27 @@ pageLoadPromise.then(() => {
       if (ele.dataset.e2eState.includes("-no-")) ele.click();
     });
   }
+
+  // 后台定时器管理者实例
+  workerJs.toString();
+  const blob = new Blob([`(${workerJs})()`], {
+    type: "application/javascript",
+  });
+  const url = URL.createObjectURL(blob);
+  const worker = new Worker(url);
+  // 等待作品加载=>点进第一个作品=>等待视频加载=>点赞？收藏？=>Time后切换到下一个视频=>等待视频加载...
   async function runSteps() {
     await firstStep();
-    setInterval(() => {
-      secondStep();
-    }, Time);
+    worker.postMessage(Time);
+    worker.addEventListener("message", async function (e) {
+      await secondStep();
+      worker.postMessage(Time);
+    });
   }
   runSteps();
 });
+
+// webworker定时器
+// 自定义视频是否点赞收藏
+// 自定义接口地址
+//
