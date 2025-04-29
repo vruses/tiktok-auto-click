@@ -16,65 +16,56 @@
 // @icon        data:image/x-icon;base64,AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAABMLAAATCwAAAAAAAAAAAAAAAAAAAAAAIAAAAK8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA7wAAAL8AAAAgAAAAAAAAACAAAADvAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAO8AAAAgAAAAvwAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/BQAQ/woAIP8KACD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAALAAAADvAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8KACD/MgCg/0YA3/9QAP//UAD//1AA//9LAO//LQCQ/woAIP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/OSBw/62Q7//ez///7+/v///////p3///yK///3xA//9QAP//UAD//yMAcP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/4CAgP///////////////////////////////////////////9O///9mIP//UAD//ygAgP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP+ankD///////////////////////////////////////////////////////Tv//9mIP//UAD//x4AX/8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/aW0A/+3vz////////////////////////f7f//f8gP/1+2D/9/1///3+3////////////+nf//9mIP//RgDf/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/x4fAP/0+0D//////////////////////97fz/+JjSD/eH0A/7S7AP/w+gD/8foQ/+zuv////////////72f//9QAP//HgBf/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/eH0A//j8kP////////////////+9n///CgAg/wAAAP8AAAD/AAAA/zw/AP/h6gD/8vog////////////9O///1sQ//8yAJ//AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP/DywD/+f2g////////////9O///1EQ3/8AAAD/AAAA/wAAAP8AAAD/AAAA/2ltAP/w+gD/+/6/////////////fED//zwAv/8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/+HqAP/q7aD///////////+ykP//PAC//wAAAP8AAAD/AAAA/wAAAP8AAAD/Hh8A//D6AP/7/r////////////+ccP//PAC//wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/8PoA//j8kP///////////6eA//9QAP//CgAg/wAAAP8AAAD/AAAA/wAAAP8AAAD/8PoA//v+v////////////6eA//88AL//AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP/h6gD/9PtQ////////////07///1AA//8yAJ//AAAA/wAAAP8AAAD/AAAA/wAAAP/w+gD/+/6/////////////p4D//zwAv/8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/6WsAP/w+gD//f7f////////////fED//1AA//88AL//GQBQ/woAIP8KACD/AAAA//D6AP/7/r////////////+ngP//PAC//wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/Wl0A//D6AP/2/GD////////////07///qID//1sQ//9QAP//WxD//zIAn/8AAAD/8PoA//v+v////////////6eA//88AL//AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/0toA//D6AP/4/Y////////////////////////////+RYP//MgCf/wAAAP/w+gD/+/6/////////////p4D//zwAv/8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8eHwD/0toA//D6AP/4/Y///////////////////////5Fg//8yAJ//AAAA//D6AP/7/r////////////+ngP//PAC//wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8eHwD/0toA//D6AP/z+0D/+/6/////////////kWD//zIAn/8AAAD/8PoA//v+v////////////6eA//88AL//AAAA/wAAAP8UAED/LQCQ/zwAv/9BAM//AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8PEAD/eH0A/+HqAP/w+gD/8foQ//L7MP9rXlD/DwAw/wAAAP/w+gD/+/6/////////////p4D//zwAv/8eAGD/ckDf/51v//+9n///nW///1AA//8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/DxAA/zw/AP9aXgD/aW0A/x4fAP8AAAD/AAAA//D6AP/7/r////////////+ngP//jWDv/+nf//////////////////+9n///UAD//wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/8PoA//v+v////////////+nf/////////////////////////////72f//9QAP//AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP/w+gD/+/6/////////////////////////////////////////////sp/P/zcAr/8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA//D6AP/7/r//////////////////////////////////+v6v/+PrIP94fQD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/8PoA//v+v////////////////////////////52ff/8eHwD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP/w+gD/+/6///////////////////////+Tf7//AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA//D6AP/7/r//////////////////so///xQAQP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/8PoA//v+v/////////////Tv//9WEO//AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP/w+gD/+v6v//3+3//9/t//t5/f/zcAr/8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAADvAAAArwAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA//D6AP/w+gD/8PoA//D6AP94fQD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAL8AAAAgAAAA7wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAADvAAAAIAAAAAAAAAAgAAAAvwAAAO8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAArwAAACAAAAAAgAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAE=
 // ==/UserScript==
 
-const Time = 3000;
+const Time = 6000;
 const api = GM_getValue("storedURL", "");
+const baseURL = "https://www.douyin.com/user/";
 let userSecUid = "";
 console.log(api);
+// 创建设置面板加到dom中，不等window.onload也没事
+const userPanel = createPanel();
+document.body.appendChild(userPanel);
+// 针对接口的简易封装
+const gm_xhr = function (api, method) {
+  return new Promise((resolve, reject) => {
+    GM_xmlhttpRequest({
+      method,
+      url: api,
+      onload: resolve,
+      onerror: reject,
+    });
+  }).then((response) => {
+    return response.responseText;
+  });
+};
 // 如果未设置接口，则先初始化设置
 if (!api) {
-  // 创建设置面板加到dom中
-  const userPanel = createPanel();
-  document.body.appendChild(userPanel);
   return;
   // 默认先在个人主页启动
-} else if (location.href === "https://www.douyin.com/user/self") {
-  new Promise((resolve) => {
-    GM_xmlhttpRequest({
-      method: "GET",
-      url: api,
-      headers: {
-        "Content-Type": "application/json",
-      },
-      onload: resolve,
+} else if (location.href.includes(baseURL + "self")) {
+  gm_xhr(api, "GET")
+    .then((res) => {
+      userSecUid = JSON.parse(res).SecUid;
+      console.log(userSecUid);
+      setTimeout(() => {
+        location.href = baseURL + userSecUid;
+      }, 5000);
     })
-      .then((response) => {
-        userSecUid = JSON.parse(response.responseText).SecUid;
-        console.log(userSecUid);
-        setTimeout(() => {
-          location.href = "https://www.douyin.com/user/" + userSecUid;
-        }, 5000);
-      })
-      .catch((e) => {
-        console.warn("接口请求出错：" + e);
-      });
-  });
+    .catch((e) => {
+      // 可能服务器挂了，也可能接口有问题
+      console.warn("接口请求出错：" + e);
+    });
   return;
 }
 // 如果在其他用户主页，获取下一个用户的secUid
-new Promise((resolve) => {
-  GM_xmlhttpRequest({
-    method: "GET",
-    url: api,
-    onload: resolve,
+gm_xhr(api, "GET")
+  .then((res) => {
+    userSecUid = JSON.parse(res).SecUid;
+    console.log(userSecUid);
   })
-    .then((response) => {
-      userSecUid = JSON.parse(response.responseText).SecUid;
-      console.log(userSecUid);
-    })
-    .catch((e) => {
-      console.warn("接口请求出错：" + e);
-    });
-});
-
-// 创建一个键盘按下事件
-const keyboardEvent = new KeyboardEvent("keydown", {
-  key: "ArrowDown", // 键值为向下箭头键
-  keyCode: 40, // 键码，ArrowDown的键码是40
-  code: "ArrowDown", // 浏览器有时会用 `code` 字段
-  which: 40, // `which` 也是一个历史上用来表示按键的字段
-  bubbles: true, // 是否冒泡
-  cancelable: true, // 是否可以取消
-});
+  .catch((e) => {
+    location.href = baseURL + "self";
+    console.warn("接口请求出错：" + e);
+  });
 
 // webWork后台定时器管理视频切换频率
 const workerJs = function () {
@@ -106,41 +97,45 @@ const workerJs = function () {
     }
   }
   const manager = new TimerManager();
+  // 只有一种倒计时，暂时先这样用着
   self.addEventListener("message", function (e) {
-    manager.set("switchClip", () => self.postMessage("switchClip"), e.data);
+    manager.set(
+      "redirectNextUser",
+      () => self.postMessage("redirectNextUser"),
+      e.data
+    );
   });
 };
 
 /**
  * @param {string} selectorKey
- * @returns {NodeList}
+ * @returns {Element}
  */
-const $queryPlayerEl = function (selectorKey) {
+const $queryPlayerElStatus = function (selectorKey) {
   selector = 'div[data-e2e="video-player-key"]'.replace("key", selectorKey);
-  return document.querySelectorAll(selector);
+  const ele = document.querySelector(selector);
+  if (ele?.dataset?.e2eState.includes("-no-")) {
+    return ele; //现在只找第一个就行
+  } else {
+    return false;
+  }
 };
 
 const pageLoadPromise = new Promise((resolve, reject) => {
   window.addEventListener("load", resolve);
 });
 pageLoadPromise.then(() => {
-  // 创建设置面板加到dom中
-  const userPanel = createPanel();
-  document.body.appendChild(userPanel);
-  // 用户昵称 ssr
-  const userNickname = document.querySelector(
-    "[data-e2e=user-info] h1"
-  ).textContent;
   // ssr
   const subscribeBtn = document.querySelector(
     "button[data-e2e=user-info-follow-btn]"
   );
   // 未关注=>关注
-  if (subscribeBtn.className.includes("primary")) {
+  if (subscribeBtn?.className?.includes("primary")) {
     subscribeBtn.click();
   }
   // ssr
-  const postList = document.querySelector("div[data-e2e=user-post-list]");
+  // ele具有缓存性质，需要每次重新查询
+  // let postList = document.querySelector("div[data-e2e=user-post-list]");
   // 不要在视频页面加载
   /**作品列表加载和视频加载
    * @param {Element} root
@@ -166,51 +161,29 @@ pageLoadPromise.then(() => {
   };
   // 等待作品列表加载
   // 等待视频加载
-  async function firstStep() {
-    await loopLoad(postList, "a", (el) => el.click()); // 作品列表第一条作品
+  /**
+   * @param {Worker} worker
+   * */
+  async function firstStep(worker) {
+    await loopLoad(document, "div[data-e2e=user-post-list] a", (el) =>
+      el.click()
+    ); // 作品列表第一条作品
     await loopLoad(document, "video", (el) => {
       //视频播放页
     });
-    if (GM_getValue("likeStatus"))
-      $queryPlayerEl("digg").forEach((ele) => {
-        // 是否点赞？
-        if (ele.dataset.e2eState.includes("-no-")) ele.click();
-      });
-    if (GM_getValue("collectStatus"))
-      $queryPlayerEl("collect").forEach((ele) => {
-        // 是否收藏？
-        if (ele.dataset.e2eState.includes("-no-")) ele.click();
-      });
-    document
-      .querySelectorAll("[data-e2e=feed-video-nickname]")
-      .forEach((ele) => {
-        // 去掉@判断名字是否相同
-        if (ele.textContent.replace("@", "") !== userNickname)
-          location.href = "https://www.douyin.com/user/" + userSecUid;
-      });
+    // 是否点赞？
+    if (GM_getValue("likeStatus")) {
+      const result = $queryPlayerElStatus("digg");
+      if (result) result.click();
+    }
+    // 是否收藏？
+    if (GM_getValue("collectStatus")) {
+      const result = $queryPlayerElStatus("collect");
+      if (result) result.click();
+    }
+    // 任务结束，通知worker倒计时
+    worker.postMessage(Time);
     return Promise.resolve();
-  }
-  // 视频页调用顺序
-  async function secondStep() {
-    // 派发事件切换视频
-    document.dispatchEvent(keyboardEvent);
-    await loopLoad(document, "video", (el) => {});
-    if (GM_getValue("likeStatus"))
-      $queryPlayerEl("digg").forEach((ele) => {
-        // 是否点赞？
-        if (ele.dataset.e2eState.includes("-no-")) ele.click();
-      });
-    if (GM_getValue("collectStatus"))
-      $queryPlayerEl("collect").forEach((ele) => {
-        // 是否收藏？
-        if (ele.dataset.e2eState.includes("-no-")) ele.click();
-      });
-    document
-      .querySelectorAll("[data-e2e=feed-video-nickname]")
-      .forEach((ele) => {
-        if (ele.textContent.replace("@", "") !== userNickname)
-          location.href = "https://www.douyin.com/user/" + userSecUid;
-      });
   }
 
   // 后台定时器管理者实例
@@ -220,14 +193,13 @@ pageLoadPromise.then(() => {
   });
   const url = URL.createObjectURL(blob);
   const worker = new Worker(url);
-  // 等待作品加载=>点进第一个作品=>等待视频加载=>点赞？收藏？=>Time后切换到下一个视频=>等待视频加载...
+  // 等待作品加载=>点进第一个作品=>等待视频加载=>点赞？收藏？=>定向至下一个用户主页
   async function runSteps() {
-    await firstStep();
-    worker.postMessage(Time);
-    worker.addEventListener("message", async function (e) {
-      await secondStep();
-      worker.postMessage(Time);
-    });
+    firstStep(worker);
   }
+  worker.addEventListener("message", function (e) {
+    location.href = baseURL + userSecUid;
+    console.log(e.data);
+  });
   runSteps();
 });
