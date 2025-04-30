@@ -3,7 +3,7 @@
 // @match       https://www.douyin.com/user/*
 // @namespace   vurses
 // @license     Mit
-// @version     1.0.1
+// @version     1.0.2
 // @author      layenh
 // @homepage    https://github.com/vruses/tiktok-auto-click
 // @@supportURL https://github.com/vruses/tiktok-auto-click/issues
