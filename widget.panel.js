@@ -90,7 +90,7 @@ const createNumberInput = function () {
       this.min = parseFloat(container.dataset.min) || 1;
       this.max = parseFloat(container.dataset.max) || Infinity;
       this.step = parseFloat(container.dataset.step) || 1;
-      this.value = parseFloat(container.dataset.value) || this.min;
+      this.value = parseFloat(GM_getValue("redirectInterval", 3)) || this.min;
 
       this.init();
     }
@@ -116,6 +116,7 @@ const createNumberInput = function () {
       this.input.value = Number.isInteger(this.value)
         ? this.value
         : this.value.toFixed(1);
+      GM_setValue("redirectInterval", this.input.value);
       this.updateButtonState();
     }
 
@@ -128,6 +129,7 @@ const createNumberInput = function () {
       this.input.value = Number.isInteger(this.value)
         ? this.value
         : this.value.toFixed(1);
+      GM_setValue("redirectInterval", this.input.value);
       this.updateButtonState();
     }
 
