@@ -148,14 +148,7 @@ const pageLoadPromise = new Promise((resolve, reject) => {
   window.addEventListener("load", resolve);
 });
 pageLoadPromise.then(() => {
-  // ssr
-  const subscribeBtn = document.querySelector(
-    "button[data-e2e=user-info-follow-btn]"
-  );
-  // 未关注=>关注
-  if (subscribeBtn?.className?.includes("primary")) {
-    subscribeBtn.click();
-  }
+
   // ssr
   // ele具有缓存性质，需要每次重新查询
   // let postList = document.querySelector("div[data-e2e=user-post-list]");
