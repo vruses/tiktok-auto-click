@@ -3,7 +3,7 @@
 // @match       https://www.douyin.com/user/*
 // @namespace   vurses
 // @license     Mit
-// @version     1.0.0
+// @version     1.0.1
 // @author      layenh
 // @homepage    https://github.com/vruses/tiktok-auto-click
 // @@supportURL https://github.com/vruses/tiktok-auto-click/issues
@@ -57,7 +57,8 @@ if (!api) {
 } else if (location.href.includes(baseURL + "self")) {
   gm_xhr(api, "GET")
     .then((res) => {
-      userSecUid = JSON.parse(res).SecUid;
+      console.log(JSON.parse(JSON.parse(res).result));
+      userSecUid = JSON.parse(JSON.parse(res).result).secuid;
       console.log(userSecUid);
       setTimeout(() => {
         location.href = baseURL + userSecUid;
@@ -80,7 +81,8 @@ window.addEventListener("keydown", function onKey(e) {
 // 如果在其他用户主页，获取下一个用户的secUid
 gm_xhr(api, "GET")
   .then((res) => {
-    userSecUid = JSON.parse(res).SecUid;
+    console.log(JSON.parse(JSON.parse(res).result));
+    userSecUid = JSON.parse(JSON.parse(res).result).secuid;
     console.log(userSecUid);
   })
   .catch((e) => {
